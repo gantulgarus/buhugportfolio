@@ -1,0 +1,13 @@
+#home {
+  /* background-color: steelblue; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/assets/slider-1.jpg");
+  background-size: "cover";
+  /* background-blend-mode: multiply;
+    color: #fff; */
+}
+.header {
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
