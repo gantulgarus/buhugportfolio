@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/navLogo.png'
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
   // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
+  const router = useRouter();
 
   // useEffect(() => {
   //   if (
@@ -127,7 +127,7 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-                Let&#39;s build something legendary together
+              Тахианы мах, өндөгний үйлдвэрлэл
               </p>
             </div>
           </div>
@@ -161,7 +161,7 @@ const Navbar = () => {
             </ul>
             <div className='pt-40'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let&#39;s Connect
+                Сошл хаяг
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a

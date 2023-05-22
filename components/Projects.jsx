@@ -1,10 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import propertyImg from '../public/assets/projects/intro1.jpg';
-import cryptoImg from '../public/assets/projects/intro2.jpg'
-import netflixImg from '../public/assets/projects/intro3.jpg'
-import twitchImg from '../public/assets/projects/intro4.jpg'
+import Intro1 from '../public/assets/projects/intro1.jpg';
+import Intro2 from '../public/assets/projects/intro2.jpg'
+import Intro3 from '../public/assets/projects/intro3.jpg'
+import Intro4 from '../public/assets/projects/intro4.jpg'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -18,30 +16,27 @@ const Projects = () => {
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='Property Finder'
-            backgroundImg={propertyImg}
-            projectUrl='/property'
+            backgroundImg={Intro1}
+            projectUrl='/projectDetail'
             tech='Тахианы мах, өндөг'
           />
           <ProjectItem
             title='Дотоодын үйлдвэрлэл ба импорт'
-            backgroundImg={cryptoImg}
-            projectUrl='/crypto'
+            backgroundImg={Intro2}
+            projectUrl='/projectDetail'
             tech='Тахианы мах, өндөг'
-
           />
           <ProjectItem
             title='Өндөгний үйлдвэрлэл'
-            backgroundImg={netflixImg}
-            projectUrl='/netflix'
+            backgroundImg={Intro3}
+            projectUrl='/projectDetail'
             tech='Тахианы мах, өндөг'
-
           />
           <ProjectItem
             title='Эдийн засгийн үр ашиг'
-            backgroundImg={twitchImg}
-            projectUrl='/twitch'
+            backgroundImg={Intro4}
+            projectUrl='/projectDetail'
             tech='Тахианы мах, өндөг'
-
           />
         </div>
       </div>
