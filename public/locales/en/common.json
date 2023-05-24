@@ -1,15 +1,51 @@
 {
-    "home": {
-      "Home title": "Home title",
-      "Home description": "Home description"
-    },
-    "about": {
-      "About title": "About title",
-      "About description": "About description"
-    },
-    "header": {
-      "Home": "Home",
-      "About": "About"
-    }
+  "Navbar": {
+    "Home": "Home",
+    "About": "About",
+    "Operation": "Operation",
+    "Project": "Project",
+    "Contact": "Contact",
+    "Title": "Poultry and egg production",
+    "Social": "Social address"
+  },
+  "Home": {
+    "Title": "Poultry farming",
+    "Subtitle": "Every day fresh"
+  },
+  "About": {
+    "Title": "Bukhug Co., Ltd ",
+    "Description 1": "Bukhug Co., Ltd was founded in 1963 initially starting a poultry farm, the first poultry farm in Mongolia.",
+    "Description 2": "By 1964, the farm was rearing 30,000 birds producing 2-2.5 million eggs and 60-70 tons of chicken meat annually. In 1973, the company expanded its operations based on the feasibility study of the Soviet Union and increased its annual production capacity to 22.6 million eggs with 100,000 egg-laying hens and 250 tons of chicken meat.",
+    "Description 3": "At the time of privatization in 1992, the farm produced approximately 100,000 eggs per day and supplied 36.0 million eggs for food consumption per year.",
+    "Description 4": "As of now, if works at full capacity, the farm has enough houses/units for egg-laying breeds available to be increased up to 270,000 in number, and 2 houses for rearing 40,000 chicks, and 4 incubators with a capacity of 66.8 thousand eggs per shift, and a warehouse for storing 10 million eggs, and a refrigerator for storing 250-300 tons of frozen meat. It also has a small-scale slaughterhouse with equipment capacity of two thousand chickens per shift."
+  },
+  "Operation": {
+    "Title": "What do we do?",
+    "Item 1": "Live poultry",
+    "Item 2": "Fresh eggs",
+    "Item 3": "Chicken",
+    "Item 4": "Chicks"
+  },
+  "Project": {
+    "Title": "What do we building?",
+    "Subtitle 1": "Food security system",
+    "Subtitle 2": "Food supply and domestic production",
+    "Subtitle 3": "Egg production",
+    "Subtitle 4": "Economic efficiency",
+    "Desc": "Chicken and Egg",
+    "More": "More",
+    "Back": "Back"
+  },
+  "Contact": {
+    "Title": "Address",
+    "City": "Mongolia, Ulaanbaatar city",
+    "Address": "Khan-Uul district, 13th subdistrict, Poultry factory area, Bukhug JSC",
+    "Name": "Name",
+    "Phone": "Phone number",
+    "Email": "Email",
+    "Subject": "Subject",
+    "Message": "Message",
+    "Send": "Send message"
   }
+}
   

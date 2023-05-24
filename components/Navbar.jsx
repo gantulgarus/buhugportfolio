@@ -1,11 +1,11 @@
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import {useTranslation} from "next-i18next"
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { useRouter } from 'next/router';
-import {useTranslation} from "next-i18next"
 import NavLogo from '../public/assets/bLogo.png'
 
 const Navbar = () => {
@@ -19,10 +19,7 @@ const Navbar = () => {
   const router = useRouter();
 
   const { locale, locales, asPath } = router;
-  console.log("locales: ", locales);
-
   const { t } = useTranslation();
-  console.log("t: ", t("header.Home"));
 
   // useEffect(() => {
   //   if (
@@ -76,19 +73,19 @@ const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <li className='ml-10 text-sm font-bold uppercase hover:border-b hover:text-blue-900'>
-              <Link href='/'>Нүүр</Link>
+              <Link href='/'>{t("Navbar.Home")}</Link>
             </li>
             <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
-              <Link href='/#about'>Бидний тухай</Link>
+              <Link href='/#about'>{t("Navbar.About")}</Link>
             </li>
             <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
-              <Link href='/#skills'>Үйл ажиллагаа</Link>
+              <Link href='/#skills'>{t("Navbar.Operation")}</Link>
             </li>
             <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
-              <Link href='/#projects'>Төслийн танилцуулга</Link>
+              <Link href='/#projects'>{t("Navbar.Project")}</Link>
             </li>
             <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
-              <Link href='/#contact'>Холбоо барих</Link>
+              <Link href='/#contact'>{t("Navbar.Contact")}</Link>
             </li>
             <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
               {/* <Link href='/' className='pr-2'><span className="fi fis fi-mn"></span></Link>
@@ -149,7 +146,7 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-              Тахианы мах, өндөгний үйлдвэрлэл
+              {t("Navbar.Title")}
               </p>
             </div>
           </div>
@@ -157,33 +154,33 @@ const Navbar = () => {
             <ul className='uppercase'>
               <Link href='/'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Нүүр
+                {t("Navbar.Home")}
                 </li>
               </Link>
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Бидний тухай
+                {t("Navbar.About")}
                 </li>
               </Link>
               <Link href='/#skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Үйл ажиллагаа
+                {t("Navbar.Operation")}
                 </li>
               </Link>
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Төслийн танилцуулга
+                {t("Navbar.Project")}
                 </li>
               </Link>
               <Link href='/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Холбоо барих
+                {t("Navbar.Contact")}
                 </li>
               </Link>
             </ul>
             <div className='pt-40'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
-                Сошл хаяг
+              {t("Navbar.Social")}
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
