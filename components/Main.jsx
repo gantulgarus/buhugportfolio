@@ -3,8 +3,7 @@ import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { Rubik_Burned } from "next/font/google";
 import {useTranslation} from "next-i18next"
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebook, FaYoutube } from "react-icons/fa";
 import css from "./Main.module.css";
 
 const rubik = Rubik_Burned({ subsets: ["latin"], weight: "400" });
@@ -21,7 +20,7 @@ const Main = () => {
           <h1 className={rubik.className}>{t("Home.Title")}</h1>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4 text-black">
             <a
-              href="https://www.linkedin.com/in/clint-briley-50056920a/"
+              href="https://www.linkedin.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -30,12 +29,12 @@ const Main = () => {
               </div>
             </a>
             <a
-              href="https://github.com/fireclint"
+              href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
             >
               <div className="rounded-full bg-white shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub />
+                <FaFacebook />
               </div>
             </a>
             <Link href="/#contact">
@@ -43,9 +42,9 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="/resume">
+            <Link href="https://youtube.com">
               <div className="rounded-full bg-white shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill />
+                <FaYoutube />
               </div>
             </Link>
           </div>
