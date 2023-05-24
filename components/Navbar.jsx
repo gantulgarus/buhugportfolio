@@ -5,15 +5,24 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
-import NavLogo from '../public/assets/navLogo.png'
+import {useTranslation} from "next-i18next"
+import NavLogo from '../public/assets/bLogo.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
+  // const [navBg, setNavBg] = useState('#ecf0f3');
+  const [navBg, setNavBg] = useState('white');
   const [linkColor, setLinkColor] = useState('#1f2937');
   // const [position, setPosition] = useState('fixed')
+
   const router = useRouter();
+
+  const { locale, locales, asPath } = router;
+  console.log("locales: ", locales);
+
+  const { t } = useTranslation();
+  console.log("t: ", t("header.Home"));
 
   // useEffect(() => {
   //   if (
@@ -61,25 +70,38 @@ const Navbar = () => {
               alt='/'
               width='125'
               height='50'
-              className='cursor-pointer'
+              className='cursor-pointer p-6'
             />
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm font-bold uppercase hover:border-b hover:text-blue-900'>
               <Link href='/'>Нүүр</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
               <Link href='/#about'>Бидний тухай</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
               <Link href='/#skills'>Үйл ажиллагаа</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
               <Link href='/#projects'>Төслийн танилцуулга</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
               <Link href='/#contact'>Холбоо барих</Link>
+            </li>
+            <li className='ml-10 text-sm font-bold uppercase hover:border-b'>
+              {/* <Link href='/' className='pr-2'><span className="fi fis fi-mn"></span></Link>
+              <Link href='/en'><span className="fi fis fi-us"></span></Link> */}
+              {locales.map((l, i) => {
+                return (
+                  <span key={i} className={l === locale ? 'text-red-600 px-1' : ''}>
+                    <Link href={asPath} locale={l}>
+                      {l}
+                    </Link>
+                  </span>
+                );
+              })}
             </li>
           </ul>
           {/* Hamburger Icon */}

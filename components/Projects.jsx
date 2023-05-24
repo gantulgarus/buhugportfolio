@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div id='projects' className='w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
+        <p className='text-xl font-bold tracking-widest uppercase text-[#5651e5]'>
           Төслийн танилцуулга
         </p>
         <h2 className='py-4'>Бид юу үйлдвэрлэдэг вэ?</h2>

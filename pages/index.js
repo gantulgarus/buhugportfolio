@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Бөхөг ХК</title>
         <meta name="description" content="Бөхөг ХК" />
-        <link rel="icon" href="/fav.png" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Main />
       <About />

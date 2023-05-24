@@ -7,8 +7,10 @@ import Intro3 from '../public/assets/projects/intro3.jpg';
 import Intro4 from '../public/assets/projects/intro4.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
+import {useTranslation} from "next-i18next"
 
 const property = () => {
+  const { t } = useTranslation();
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -23,6 +25,7 @@ const property = () => {
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2'>Тахианы мах, өндөгний үйлдвэрлэл</h2>
           <h3>React JS / Tailwind / Firebase</h3>
+          <h4>{t("header.Home")}</h4>
         </div>
       </div>
 
