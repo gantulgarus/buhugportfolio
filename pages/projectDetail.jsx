@@ -9,7 +9,7 @@ import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import {useTranslation} from "next-i18next"
 
-const property = () => {
+const ProjectDetail = () => {
   const { t } = useTranslation();
   return (
     <div className='w-full'>
@@ -61,4 +61,4 @@ const property = () => {
   );
 };
 
-export default property;
+export default ProjectDetail;
