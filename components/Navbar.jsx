@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaFacebook, FaYoutube } from "react-icons/fa";
-import NavLogo from "../public/assets/bLogo.png";
+import NavLogo from "../public/assets/logo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -65,7 +65,7 @@ const Navbar = () => {
             alt="/"
             width="125"
             height="50"
-            className="cursor-pointer p-6"
+            className="cursor-pointer p-2"
           />
         </Link>
         <div>
@@ -174,7 +174,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image src={NavLogo} width="87" height="35" alt="/" />
+                <Image src={NavLogo} width="130" height="70" alt="/" />
               </Link>
               <div
                 onClick={handleNav}
